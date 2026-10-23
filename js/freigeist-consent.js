@@ -319,6 +319,4 @@
   }
 
   win.FreigeistConsent = { open: openUI, close: closeUI, renew: openUI, get: getConsent, set: setConsent };
-  win.Cookiebot = win.Cookiebot || {};
-  win.Cookiebot.renew = openUI;
 })();
