@@ -2,6 +2,12 @@
 <html data-wf-page="6889f5925231109c0afa529a" data-wf-site="6800fc643315cfd12d2f6fa5" lang="de">
 <head>
   <meta charset="utf-8">
+  <script>
+    if (location.pathname.endsWith('.html')) {
+      var clean = location.pathname.replace(/\/index\.html$/, '/').replace(/\.html$/, '');
+      location.replace(clean + location.search + location.hash);
+    }
+  </script>
   <title>Impressum</title>
   <meta content="Impressum" property="og:title">
   <meta content="Impressum" name="twitter:title">
@@ -179,12 +185,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
   <script src="https://cdn.jsdelivr.net/npm/@flowbase-co/boosters-carousel-ticker@1.3.3/dist/carousel-ticker.js" type="text/javascript" integrity="sha384-KD0ti3dyN68nyVKMkol+NwdznZeOBUdI2k64A6Me3wCh+PANgAOY5pc36m437da9" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@flowbase-co/boosters-text-scramble@1.0.2/dist/text-scramble.js" type="text/javascript" integrity="sha384-0BJyGpcEjOJnDNkNptfAIYSbSaraiZtlnsJHtF8rpt0N7CqHtSLe0NV4XLFdpvxX" crossorigin="anonymous"></script>
+  <style>.w-webflow-badge { display: none !important; }</style>
 </head>
 <body>
   <div data-w-id="514cac12-5237-6351-e11a-d2ddc53c2703" class="nav navbar">
     <div data-duration="400" data-animation="default" data-easing2="ease" data-easing="ease" data-collapse="medium" role="banner" data-no-scroll="1" class="nav-container w-nav">
       <div class="nav-left colorchange">
-        <a href="index.html" class="nav-logo w-inline-block">
+        <a href="/" class="nav-logo w-inline-block">
           <div class="colorchange"> Joline Meens.</div>
         </a>
       </div>
@@ -206,7 +213,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             <div class="eyebrow">unsere Dienstleistungen</div>
                             <ul role="list" class="nav-mega-menu-list w-list-unstyled">
                               <li class="utility-margin-bottom-0">
-                                <a href="privatkunden.html" class="mega-nav-link-item w-inline-block">
+                                <a href="/privatkunden" class="mega-nav-link-item w-inline-block">
                                   <div class="icon-medium"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 32 32" fill="currentColor" class="svg-7">
                                       <path d="m25.7 9.3l-7-7A.9.9 0 0 0 18 2H8a2.006 2.006 0 0 0-2 2v24a2.006 2.006 0 0 0 2 2h16a2.006 2.006 0 0 0 2-2V10a.9.9 0 0 0-.3-.7M18 4.4l5.6 5.6H18ZM24 28H8V4h8v6a2.006 2.006 0 0 0 2 2h6Z" stroke-linejoin="round"></path>
                                     </svg></div>
@@ -217,7 +224,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 </a>
                               </li>
                               <li class="utility-margin-bottom-0">
-                                <a href="gewerbekunden.html" class="mega-nav-link-item w-inline-block">
+                                <a href="/gewerbekunden" class="mega-nav-link-item w-inline-block">
                                   <div class="icon-medium"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 32 32" fill="currentColor" class="svg-8">
                                       <path d="m25.7 9.3l-7-7A.9.9 0 0 0 18 2H8a2.006 2.006 0 0 0-2 2v24a2.006 2.006 0 0 0 2 2h16a2.006 2.006 0 0 0 2-2V10a.9.9 0 0 0-.3-.7M18 4.4l5.6 5.6H18ZM24 28H8V4h8v6a2.006 2.006 0 0 0 2 2h6Z" stroke-linejoin="round"></path>
                                     </svg></div>
@@ -228,7 +235,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 </a>
                               </li>
                               <li class="utility-margin-bottom-0">
-                                <a href="expats.html" class="mega-nav-link-item w-inline-block">
+                                <a href="/expats" class="mega-nav-link-item w-inline-block">
                                   <div class="icon-medium"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 32 32" fill="currentColor" class="svg-9">
                                       <path d="m25.7 9.3l-7-7A.9.9 0 0 0 18 2H8a2.006 2.006 0 0 0-2 2v24a2.006 2.006 0 0 0 2 2h16a2.006 2.006 0 0 0 2-2V10a.9.9 0 0 0-.3-.7M18 4.4l5.6 5.6H18ZM24 28H8V4h8v6a2.006 2.006 0 0 0 2 2h6Z" stroke-linejoin="round"></path>
                                     </svg></div>
@@ -244,7 +251,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             <div class="eyebrow">Privatkunden</div>
                             <ul role="list" class="nav-mega-menu-list w-list-unstyled">
                               <li class="utility-margin-bottom-0">
-                                <a href="https://jolinemeens.de/privatkunden#BF-Info" class="mega-nav-link-item w-inline-block">
+                                <a href="/privatkunden#BF-Info" class="mega-nav-link-item w-inline-block">
                                   <div class="icon-medium"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 32 32" fill="currentColor" class="svg-10">
                                       <path d="m25.7 9.3l-7-7A.9.9 0 0 0 18 2H8a2.006 2.006 0 0 0-2 2v24a2.006 2.006 0 0 0 2 2h16a2.006 2.006 0 0 0 2-2V10a.9.9 0 0 0-.3-.7M18 4.4l5.6 5.6H18ZM24 28H8V4h8v6a2.006 2.006 0 0 0 2 2h6Z" stroke-linejoin="round"></path>
                                     </svg></div>
@@ -255,7 +262,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 </a>
                               </li>
                               <li class="utility-margin-bottom-0">
-                                <a href="kristina-mitro.html" class="mega-nav-link-item w-inline-block">
+                                <a href="/kristina-mitro" class="mega-nav-link-item w-inline-block">
                                   <div class="icon-medium"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 32 32" fill="currentColor" class="svg-14">
                                       <path d="m25.7 9.3l-7-7A.9.9 0 0 0 18 2H8a2.006 2.006 0 0 0-2 2v24a2.006 2.006 0 0 0 2 2h16a2.006 2.006 0 0 0 2-2V10a.9.9 0 0 0-.3-.7M18 4.4l5.6 5.6H18ZM24 28H8V4h8v6a2.006 2.006 0 0 0 2 2h6Z" stroke-linejoin="round"></path>
                                     </svg></div>
@@ -266,7 +273,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 </a>
                               </li>
                               <li class="utility-margin-bottom-0">
-                                <a href="downloads.html" class="mega-nav-link-item w-inline-block">
+                                <a href="/downloads" class="mega-nav-link-item w-inline-block">
                                   <div class="icon-medium"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 32 32" fill="currentColor" class="svg-12">
                                       <path d="m25.7 9.3l-7-7A.9.9 0 0 0 18 2H8a2.006 2.006 0 0 0-2 2v24a2.006 2.006 0 0 0 2 2h16a2.006 2.006 0 0 0 2-2V10a.9.9 0 0 0-.3-.7M18 4.4l5.6 5.6H18ZM24 28H8V4h8v6a2.006 2.006 0 0 0 2 2h6Z" stroke-linejoin="round"></path>
                                     </svg></div>
@@ -282,7 +289,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             <div class="eyebrow">Firmenkunden</div>
                             <ul role="list" class="nav-mega-menu-list w-list-unstyled">
                               <li class="utility-margin-bottom-0">
-                                <a href="https://jolinemeens.de/gewerbekunden#BFInfo" class="mega-nav-link-item w-inline-block">
+                                <a href="/gewerbekunden#BFInfo" class="mega-nav-link-item w-inline-block">
                                   <div class="icon-medium"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 32 32" fill="currentColor" class="svg-13">
                                       <path d="m25.7 9.3l-7-7A.9.9 0 0 0 18 2H8a2.006 2.006 0 0 0-2 2v24a2.006 2.006 0 0 0 2 2h16a2.006 2.006 0 0 0 2-2V10a.9.9 0 0 0-.3-.7M18 4.4l5.6 5.6H18ZM24 28H8V4h8v6a2.006 2.006 0 0 0 2 2h6Z" stroke-linejoin="round"></path>
                                     </svg></div>
@@ -293,7 +300,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 </a>
                               </li>
                               <li class="utility-margin-bottom-0">
-                                <a href="downloads.html" class="mega-nav-link-item w-inline-block">
+                                <a href="/downloads" class="mega-nav-link-item w-inline-block">
                                   <div class="icon-medium"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 32 32" fill="currentColor">
                                       <path d="m25.7 9.3l-7-7A.9.9 0 0 0 18 2H8a2.006 2.006 0 0 0-2 2v24a2.006 2.006 0 0 0 2 2h16a2.006 2.006 0 0 0 2-2V10a.9.9 0 0 0-.3-.7M18 4.4l5.6 5.6H18ZM24 28H8V4h8v6a2.006 2.006 0 0 0 2 2h6Z" stroke-linejoin="round" class="path-6"></path>
                                     </svg></div>
@@ -308,7 +315,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         </div>
                       </li>
                       <li id="w-node-_016f5a0a-5b63-edde-82c5-e2b2ad6d2ede-ad6d2e56" class="flex-horizontal w-node-_514cac12-5237-6351-e11a-d2ddc53c278b-c53c2703">
-                        <a href="kontakt.html" class="card-link inverse-card-link flex-child-expand w-inline-block">
+                        <a href="/kontakt" class="card-link inverse-card-link flex-child-expand w-inline-block">
                           <div class="card-body">
                             <div class="h3-heading">Du hast noch offene Fragen?</div>
                             <p class="paragraph-sm utility-text-inverse-secondary">Kontaktiere uns gerne direkt!</p>
@@ -331,17 +338,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               </div>
             </li>
             <li class="nav-menu-list-item">
-              <a href="team.html" class="nav-link w-inline-block">
+              <a href="/team" class="nav-link w-inline-block">
                 <div>Über Uns</div>
               </a>
             </li>
             <li class="nav-menu-list-item">
-              <a href="faq.html" class="nav-link w-inline-block">
+              <a href="/faq" class="nav-link w-inline-block">
                 <div>FAQs</div>
               </a>
             </li>
             <li class="nav-menu-list-item">
-              <a href="https://jolinemeens.de/en" class="nav-link w-inline-block">
+              <a href="/en/impressum" class="nav-link w-inline-block">
                 <div class="text-block-7">EN</div><svg viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-icon">
                   <path d="M12 21C16.1926 21 19.7156 18.1332 20.7157 14.2529M12 21C7.80742 21 4.28442 18.1332 3.2843 14.2529M12 21C14.4853 21 16.5 16.9706 16.5 12C16.5 7.02944 14.4853 3 12 3M12 21C9.51472 21 7.5 16.9706 7.5 12C7.5 7.02944 9.51472 3 12 3M12 3C15.3652 3 18.299 4.84694 19.8431 7.58245M12 3C8.63481 3 5.70099 4.84694 4.15692 7.58245M19.8431 7.58245C17.7397 9.40039 14.9983 10.5 12 10.5C9.00172 10.5 6.26027 9.40039 4.15692 7.58245M19.8431 7.58245C20.5797 8.88743 21 10.3946 21 12C21 12.778 20.9013 13.5329 20.7157 14.2529M20.7157 14.2529C18.1334 15.6847 15.1619 16.5 12 16.5C8.8381 16.5 5.86662 15.6847 3.2843 14.2529M3.2843 14.2529C3.09871 13.5329 3 12.778 3 12C3 10.3946 3.42032 8.88743 4.15692 7.58245" stroke="#0F172A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="path-7"></path>
                 </svg>
@@ -350,7 +357,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </ul>
         </nav>
         <div class="button-group utility-margin-top-0">
-          <a href="kontakt.html" class="button primary-button-on-inverse kontakt-button w-inline-block">
+          <a href="/kontakt" class="button primary-button-on-inverse kontakt-button w-inline-block">
             <div class="button-label">Kontakt Aufnehmen</div>
           </a>
         </div>
@@ -400,7 +407,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <footer data-record-id="4e1d84ea-7d12-3e5c-9d70-fb0b8bbba8b9" data-copilot="true" class="footer">
     <div class="container">
       <div class="w-layout-grid grid-layout desktop-6-column tablet-3-column mobile-landscape-2-column mobile-portrait-1-column grid-gap-md utility-margin-bottom-4rem">
-        <a id="w-node-bcffb4d2-7c0e-989b-281f-8a6433463903-8b169251" href="index.html" class="logo w-node-b312a960-1130-37e8-1f19-cb7a52980a96-52980a93 w-inline-block">
+        <a id="w-node-bcffb4d2-7c0e-989b-281f-8a6433463903-8b169251" href="/" class="logo w-node-b312a960-1130-37e8-1f19-cb7a52980a96-52980a93 w-inline-block">
           <div class="paragraph-xl utility-margin-bottom-0 utility-text-all-caps">joline meens.</div>
         </a>
         <ul role="list" class="utility-margin-bottom-0 w-list-unstyled">
@@ -408,17 +415,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <h2 class="h6-heading utility-text-secondary">Leistungsangebot</h2>
           </li>
           <li>
-            <a href="privatkunden.html" class="footer-link w-inline-block">
+            <a href="/privatkunden" class="footer-link w-inline-block">
               <div>Privatkunden</div>
             </a>
           </li>
           <li>
-            <a href="expats.html" class="footer-link w-inline-block">
+            <a href="/expats" class="footer-link w-inline-block">
               <div>Expats</div>
             </a>
           </li>
           <li>
-            <a href="gewerbekunden.html" class="footer-link w-inline-block">
+            <a href="/gewerbekunden" class="footer-link w-inline-block">
               <div>Unternehmer:innen</div>
             </a>
           </li>
@@ -428,17 +435,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <h2 class="h6-heading utility-text-secondary">Über</h2>
           </li>
           <li>
-            <a href="team.html" class="footer-link w-inline-block">
+            <a href="/team" class="footer-link w-inline-block">
               <div>Über Uns</div>
             </a>
           </li>
           <li>
-            <a href="team.html" class="footer-link w-inline-block">
+            <a href="/team" class="footer-link w-inline-block">
               <div>Werte</div>
             </a>
           </li>
           <li>
-            <a href="team.html" class="footer-link w-inline-block">
+            <a href="/team" class="footer-link w-inline-block">
               <div>Team</div>
             </a>
           </li>
@@ -448,22 +455,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <h2 class="h6-heading utility-text-secondary">Support</h2>
           </li>
           <li>
-            <a href="kontakt.html" class="footer-link w-inline-block">
+            <a href="/kontakt" class="footer-link w-inline-block">
               <div>Kontakt</div>
             </a>
           </li>
           <li>
-            <a href="faq.html" class="footer-link w-inline-block">
+            <a href="/faq" class="footer-link w-inline-block">
               <div>FAQ</div>
             </a>
           </li>
           <li>
-            <a href="downloads.html" class="footer-link w-inline-block">
+            <a href="/downloads" class="footer-link w-inline-block">
               <div>Downloads</div>
             </a>
           </li>
           <li>
-            <a href="https://jolinemeens.de/en" class="footer-link w-inline-block">
+            <a href="/en/impressum" class="footer-link w-inline-block">
               <div>Language: DE / EN</div>
             </a>
           </li>
@@ -473,12 +480,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <h2 class="h6-heading utility-text-secondary">Rechtliches</h2>
           </li>
           <li>
-            <a href="impressum.html" aria-current="page" class="footer-link w-inline-block w--current">
+            <a href="/impressum" aria-current="page" class="footer-link w-inline-block w--current">
               <div>Impressum</div>
             </a>
           </li>
           <li>
-            <a href="datenschutz.html" class="footer-link w-inline-block">
+            <a href="/datenschutz" class="footer-link w-inline-block">
               <div>Datenschutz</div>
             </a>
           </li>
@@ -490,7 +497,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </ul>
       </div>
       <div class="flex-horizontal x-space-between tablet-flex-vertical flex-gap-sm">
-        <a href="kontakt.html" class="button small-button w-button">Let’s talk!</a>
+        <a href="/kontakt" class="button small-button w-button">Let’s talk!</a>
         <ul role="list" aria-label="Social media links" class="footer-icons-group utility-margin-top-auto w-list-unstyled">
           <li class="utility-margin-bottom-0">
             <a href="https://wa.me/message/UPZJVNUIFFHNK1" class="footer-icon-link w-inline-block">
@@ -514,17 +521,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="flex-horizontal x-space-between tablet-flex-vertical tablet-flex-x-center flex-gap-sm">
         <ul role="list" class="flex-horizontal y-center x-center flex-gap-xs wrap utility-margin-bottom-0 utility-padding-all-0 w-list-unstyled">
           <li class="utility-margin-bottom-0">
-            <a href="index.html" class="footer-link w-inline-block">
+            <a href="/" class="footer-link w-inline-block">
               <div>Home</div>
             </a>
           </li>
           <li class="utility-margin-bottom-0">
-            <a href="privatkunden.html" class="footer-link w-inline-block">
+            <a href="/privatkunden" class="footer-link w-inline-block">
               <div>Beratung</div>
             </a>
           </li>
           <li class="utility-margin-bottom-0">
-            <a href="kontakt.html" class="footer-link w-inline-block">
+            <a href="/kontakt" class="footer-link w-inline-block">
               <div>Kontakt</div>
             </a>
           </li>

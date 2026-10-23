@@ -2,6 +2,12 @@
 <html data-wf-page="6895ee6bf9f996433925f5f9" data-wf-site="6800fc643315cfd12d2f6fa5" lang="de">
 <head>
   <meta charset="utf-8">
+  <script>
+    if (location.pathname.endsWith('.html')) {
+      var clean = location.pathname.replace(/\/index\.html$/, '/').replace(/\.html$/, '');
+      location.replace(clean + location.search + location.hash);
+    }
+  </script>
   <title>Protected page</title>
   <meta content="Protected page" property="og:title">
   <meta content="Protected page" name="twitter:title">
@@ -164,6 +170,7 @@ document.addEventListener("DOMContentLoaded", function () {
 </style>
   <script src="https://cdn.jsdelivr.net/npm/@flowbase-co/boosters-carousel-ticker@1.3.3/dist/carousel-ticker.js" type="text/javascript" integrity="sha384-KD0ti3dyN68nyVKMkol+NwdznZeOBUdI2k64A6Me3wCh+PANgAOY5pc36m437da9" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@flowbase-co/boosters-text-scramble@1.0.2/dist/text-scramble.js" type="text/javascript" integrity="sha384-0BJyGpcEjOJnDNkNptfAIYSbSaraiZtlnsJHtF8rpt0N7CqHtSLe0NV4XLFdpvxX" crossorigin="anonymous"></script>
+  <style>.w-webflow-badge { display: none !important; }</style>
 </head>
 <body>
   <div class="utility-page-wrap">

@@ -2,6 +2,12 @@
 <html data-wf-page="69ce9a565dd58cd67eaeb067" data-wf-site="6800fc643315cfd12d2f6fa5" lang="de">
 <head>
   <meta charset="utf-8">
+  <script>
+    if (location.pathname.endsWith('.html')) {
+      var clean = location.pathname.replace(/\/index\.html$/, '/').replace(/\.html$/, '');
+      location.replace(clean + location.search + location.hash);
+    }
+  </script>
   <title>Kristina Mitro</title>
   <meta content="Ich bin Joline Meens – Vermögensberaterin aus Aachen. Ich helfe Menschen dabei, ihren Traum vom Eigenheim zu verwirklichen – oder mit smarten Investments finanzielle Freiheit zu erreichen." name="description">
   <meta content="Kristina Mitro" property="og:title">
@@ -201,12 +207,13 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
   <script src="https://cdn.jsdelivr.net/npm/@flowbase-co/boosters-carousel-ticker@1.3.3/dist/carousel-ticker.js" type="text/javascript" integrity="sha384-KD0ti3dyN68nyVKMkol+NwdznZeOBUdI2k64A6Me3wCh+PANgAOY5pc36m437da9" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@flowbase-co/boosters-text-scramble@1.0.2/dist/text-scramble.js" type="text/javascript" integrity="sha384-0BJyGpcEjOJnDNkNptfAIYSbSaraiZtlnsJHtF8rpt0N7CqHtSLe0NV4XLFdpvxX" crossorigin="anonymous"></script>
+  <style>.w-webflow-badge { display: none !important; }</style>
 </head>
 <body>
   <div class="div-block-13">
     <div data-duration="400" data-animation="default" data-easing2="ease" data-easing="ease" data-collapse="medium" role="banner" data-no-scroll="1" class="nav-container w-nav">
       <div class="nav-left colorchange">
-        <a href="index.html" class="nav-logo w-inline-block">
+        <a href="/" class="nav-logo w-inline-block">
           <div class="colorchange">Kristina Mitro.</div>
         </a>
       </div>
@@ -224,7 +231,7 @@ document.addEventListener("DOMContentLoaded", function () {
               </a>
             </li>
             <li class="nav-menu-list-item">
-              <a href="index.html" class="nav-link w-inline-block">
+              <a href="/" class="nav-link w-inline-block">
                 <div>Joline Meens</div>
               </a>
             </li>
@@ -555,7 +562,7 @@ document.addEventListener("DOMContentLoaded", function () {
   <footer data-record-id="4e1d84ea-7d12-3e5c-9d70-fb0b8bbba8b9" data-copilot="true" class="footer">
     <div class="container">
       <div class="w-layout-grid grid-layout desktop-6-column tablet-3-column mobile-landscape-2-column mobile-portrait-1-column grid-gap-md utility-margin-bottom-4rem">
-        <a id="w-node-bcffb4d2-7c0e-989b-281f-8a6433463903-8b169251" href="index.html" class="logo w-node-b312a960-1130-37e8-1f19-cb7a52980a96-52980a93 w-inline-block">
+        <a id="w-node-bcffb4d2-7c0e-989b-281f-8a6433463903-8b169251" href="/" class="logo w-node-b312a960-1130-37e8-1f19-cb7a52980a96-52980a93 w-inline-block">
           <div class="paragraph-xl utility-margin-bottom-0 utility-text-all-caps">joline meens.</div>
         </a>
         <ul role="list" class="utility-margin-bottom-0 w-list-unstyled">
@@ -563,17 +570,17 @@ document.addEventListener("DOMContentLoaded", function () {
             <h2 class="h6-heading utility-text-secondary">Leistungsangebot</h2>
           </li>
           <li>
-            <a href="privatkunden.html" class="footer-link w-inline-block">
+            <a href="/privatkunden" class="footer-link w-inline-block">
               <div>Privatkunden</div>
             </a>
           </li>
           <li>
-            <a href="expats.html" class="footer-link w-inline-block">
+            <a href="/expats" class="footer-link w-inline-block">
               <div>Expats</div>
             </a>
           </li>
           <li>
-            <a href="gewerbekunden.html" class="footer-link w-inline-block">
+            <a href="/gewerbekunden" class="footer-link w-inline-block">
               <div>Unternehmer:innen</div>
             </a>
           </li>
@@ -583,17 +590,17 @@ document.addEventListener("DOMContentLoaded", function () {
             <h2 class="h6-heading utility-text-secondary">Über</h2>
           </li>
           <li>
-            <a href="team.html" class="footer-link w-inline-block">
+            <a href="/team" class="footer-link w-inline-block">
               <div>Über Uns</div>
             </a>
           </li>
           <li>
-            <a href="team.html" class="footer-link w-inline-block">
+            <a href="/team" class="footer-link w-inline-block">
               <div>Werte</div>
             </a>
           </li>
           <li>
-            <a href="team.html" class="footer-link w-inline-block">
+            <a href="/team" class="footer-link w-inline-block">
               <div>Team</div>
             </a>
           </li>
@@ -603,22 +610,22 @@ document.addEventListener("DOMContentLoaded", function () {
             <h2 class="h6-heading utility-text-secondary">Support</h2>
           </li>
           <li>
-            <a href="kontakt.html" class="footer-link w-inline-block">
+            <a href="/kontakt" class="footer-link w-inline-block">
               <div>Kontakt</div>
             </a>
           </li>
           <li>
-            <a href="faq.html" class="footer-link w-inline-block">
+            <a href="/faq" class="footer-link w-inline-block">
               <div>FAQ</div>
             </a>
           </li>
           <li>
-            <a href="downloads.html" class="footer-link w-inline-block">
+            <a href="/downloads" class="footer-link w-inline-block">
               <div>Downloads</div>
             </a>
           </li>
           <li>
-            <a href="https://jolinemeens.de/en" class="footer-link w-inline-block">
+            <a href="/en/kristina-mitro" class="footer-link w-inline-block">
               <div>Language: DE / EN</div>
             </a>
           </li>
@@ -628,12 +635,12 @@ document.addEventListener("DOMContentLoaded", function () {
             <h2 class="h6-heading utility-text-secondary">Rechtliches</h2>
           </li>
           <li>
-            <a href="impressum.html" class="footer-link w-inline-block">
+            <a href="/impressum" class="footer-link w-inline-block">
               <div>Impressum</div>
             </a>
           </li>
           <li>
-            <a href="datenschutz.html" class="footer-link w-inline-block">
+            <a href="/datenschutz" class="footer-link w-inline-block">
               <div>Datenschutz</div>
             </a>
           </li>
@@ -645,7 +652,7 @@ document.addEventListener("DOMContentLoaded", function () {
         </ul>
       </div>
       <div class="flex-horizontal x-space-between tablet-flex-vertical flex-gap-sm">
-        <a href="kontakt.html" class="button small-button w-button">Let’s talk!</a>
+        <a href="/kontakt" class="button small-button w-button">Let’s talk!</a>
         <ul role="list" aria-label="Social media links" class="footer-icons-group utility-margin-top-auto w-list-unstyled">
           <li class="utility-margin-bottom-0">
             <a href="https://wa.me/message/UPZJVNUIFFHNK1" class="footer-icon-link w-inline-block">
@@ -669,17 +676,17 @@ document.addEventListener("DOMContentLoaded", function () {
       <div class="flex-horizontal x-space-between tablet-flex-vertical tablet-flex-x-center flex-gap-sm">
         <ul role="list" class="flex-horizontal y-center x-center flex-gap-xs wrap utility-margin-bottom-0 utility-padding-all-0 w-list-unstyled">
           <li class="utility-margin-bottom-0">
-            <a href="index.html" class="footer-link w-inline-block">
+            <a href="/" class="footer-link w-inline-block">
               <div>Home</div>
             </a>
           </li>
           <li class="utility-margin-bottom-0">
-            <a href="privatkunden.html" class="footer-link w-inline-block">
+            <a href="/privatkunden" class="footer-link w-inline-block">
               <div>Beratung</div>
             </a>
           </li>
           <li class="utility-margin-bottom-0">
-            <a href="kontakt.html" class="footer-link w-inline-block">
+            <a href="/kontakt" class="footer-link w-inline-block">
               <div>Kontakt</div>
             </a>
           </li>
