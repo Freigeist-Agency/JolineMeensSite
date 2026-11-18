@@ -162,19 +162,27 @@
     return state;
   }
 
+  function allowed(cat, cats) {
+    cat = (cat || '').toLowerCase();
+    if (cat === 'necessary' || cat === 'essential') return true;
+    if (cat === 'analytics' || cat === 'statistics') return Boolean(cats.a);
+    return cat === 'marketing' && Boolean(cats.m) && !hasGPC;
+  }
+
   var executed = [];
   function unblockScripts(cats) {
+    var fr = doc.querySelectorAll('iframe[data-fgc-src]');
+    for (var j = 0; j < fr.length; j++) {
+      if (!allowed(fr[j].getAttribute('data-fgc-category'), cats)) continue;
+      fr[j].removeAttribute('srcdoc'); // srcdoc wins over src, so it has to go
+      fr[j].src = fr[j].getAttribute('data-fgc-src');
+      fr[j].removeAttribute('data-fgc-src');
+    }
     var sl = doc.querySelectorAll('script[type="text/plain"]');
     for (var i = 0; i < sl.length; i++) {
       var s = sl[i];
       if (executed.indexOf(s) !== -1) continue;
-      var cat = (s.getAttribute('data-fgc-category') || s.getAttribute('data-cookieconsent') || '').toLowerCase();
-      var ok = false;
-      if (cat === 'necessary' || cat === 'essential') ok = true;
-      else if ((cat === 'analytics' || cat === 'statistics') && cats.a) ok = true;
-      else if (cat === 'marketing' && cats.m && !hasGPC) ok = true;
-
-      if (ok) {
+      if (allowed(s.getAttribute('data-fgc-category') || s.getAttribute('data-cookieconsent'), cats)) {
         executed.push(s);
         var x = doc.createElement('script');
         x.type = 'text/javascript';
